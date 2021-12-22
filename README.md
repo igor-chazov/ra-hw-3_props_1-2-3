@@ -2,7 +2,7 @@
 
 # 3. Домашнее задание к лекции «Props»
 
-[[GithubPages](https://igor-chazov.github.io/ra-hw-3_props_1-2-3)]
+[![Build status](https://ci.appveyor.com/api/projects/status/2btfga9x6r4ch8y9?svg=true)](https://ci.appveyor.com/project/igor-chazov/ra-hw-3-props-1-2-3) [[GithubPages](https://igor-chazov.github.io/ra-hw-3_props_1-2-3)]
 
 ---
 
