@@ -1,4 +1,5 @@
 import './listing.css';
+import PropTypes from 'prop-types';
 
 function Listing({ items }) {
   const getTitle = (title) => {
@@ -43,6 +44,10 @@ function Listing({ items }) {
       )}
     </div>
   )
+}
+
+Listing.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.object),
 }
 
 Listing.defaultProps = {

@@ -1,6 +1,7 @@
 import Star from './Star/Star';
 import './stars.css';
 import { nanoid } from 'nanoid'
+import PropTypes from 'prop-types';
 
 function Stars({ count = 0 }) {
   const number = parseInt(count, 10);
@@ -24,6 +25,10 @@ function Stars({ count = 0 }) {
       {[starsListItems]}
     </ul>
   )
+}
+
+Stars.propTypes = {
+  count: PropTypes.number.isRequired,
 }
 
 export default Stars;
