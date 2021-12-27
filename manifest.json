@@ -1,0 +1,11 @@
+{
+  "short_name": "ra-hw-3_props",
+  "name": "ra-hw-3_props-1-films-2-listing-3-chat",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]  
+}
