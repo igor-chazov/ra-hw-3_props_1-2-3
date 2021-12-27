@@ -1,24 +1,18 @@
 import Star from './Star/Star';
 import './stars.css';
 import { nanoid } from 'nanoid'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 function Stars({ count = 0 }) {
-  const number = parseInt(count, 10);
+  const number = parseInt(count);
   if (Number.isNaN(number)) return null;
   if (number < 1 || number > 5) return null;
 
-  const listItems = [];
+  const starsListItems = [];
 
   for (let i = 1; i <= count; i += 1) {
-    listItems.push(<Star />);
+    starsListItems.push(<li key={nanoid()}><Star /></li>);
   }
-
-  const listItemsIndex = listItems.map((listItem) =>
-    ({ id: nanoid(), value: listItem }));
-
-  const starsListItems = listItemsIndex.map((listItem) =>
-    <li key={listItem.id}>{listItem.value}</li>);
 
   return (
     <ul className="card-body-stars">
@@ -29,6 +23,10 @@ function Stars({ count = 0 }) {
 
 Stars.propTypes = {
   count: PropTypes.number.isRequired,
+}
+
+Stars.defaultProps = {
+  count: 0,
 }
 
 export default Stars;

@@ -47,7 +47,7 @@ function Listing({ items }) {
 }
 
 Listing.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.object),
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
 }
 
 Listing.defaultProps = {

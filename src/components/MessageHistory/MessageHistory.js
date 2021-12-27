@@ -27,7 +27,6 @@ function MessageHistory({ list = [] }) {
 
     return msgTypes[message.type];
   }
-
   return (
     <ul>
       {list.map((message) => showMessage(message))}
@@ -36,7 +35,7 @@ function MessageHistory({ list = [] }) {
 }
 
 MessageHistory.propTypes = {
-  list: PropTypes.arrayOf(PropTypes.object),
+  list: PropTypes.arrayOf(PropTypes.object).isRequired,
 }
 
 export default MessageHistory;
